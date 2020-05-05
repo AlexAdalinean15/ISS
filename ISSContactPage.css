@@ -53,7 +53,7 @@ body
     margin-bottom: -20px;
 }
 
-.user-information
+.company-details
 {
     margin-left:390px;
     margin-top: 100px;
@@ -64,7 +64,7 @@ body
 }
 
 
-.user-information::after
+.company-details::after
 {
     content: ' ';
     display: block;
@@ -72,68 +72,56 @@ body
     height: 0px;
     border-bottom:solid 2px #4CAF50;
     width: 28%;
-}
-
-.user-name
-{
-    margin-left:390px;
-    margin-top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-
-.user-n
-{
-    margin-left:410px;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-
-
-
-.user-email
-{
-    margin-left:390px;
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-
-.user-e
-{
-    margin-left:410px;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
 }
 
 #icon
 {
-    margin-right: 5px;
+    margin-right: 30px;
     color:#4CAF50;
 }
 
-.user-history
+.title
 {
-    margin-left:730px;
-    margin-top:-183px;
+    margin-left:390px;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 250px;
+    color:  rgb(82, 80, 80);
+}
+
+.body
+{
+    margin-left:435px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 350px;
+    color:  rgb(82, 80, 80);
+}
+
+.body span
+{
+    color:#4CAF50;
+}
+
+#lastIcon
+{
+    margin-top:25px;
+}
+
+.write-comment
+{
+    margin-left:1000px;
+    margin-top:-380px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    width: 190px;
+    width: 250px;
     color: rgb(82, 80, 80);
 }
 
 
-.user-history::after
+.write-comment::after
 {
     content: ' ';
     display: block;
@@ -143,28 +131,43 @@ body
     width: 28%;
 }
 
-.rental
+#comment
 {
-    margin-top:45px;
+    margin-left:1000px;
+    margin-top:25px;
 }
 
-.user-rental1
+.input-field
 {
-    margin-left:730px;
-    margin-top: 15px;
+    margin-inline-start: 10px;
+    width: 500px;
+    height: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid #4CAF50;
+    outline: none;
+    background: transparent;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
-.user-R1
+#inputComment
 {
-    margin-left:950px;
-    margin-top: -20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
+    width: 500px;
+    height: 150px;
 }
 
+.submit-btn
+{
+    width: 100px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top:10px;
+    background: #4CAF50;
+    border: 0;
+    color:#fff;
+    outline: none;
+    border-radius: 5px;
+}

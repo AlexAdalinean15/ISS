@@ -9,8 +9,7 @@
 {
     height: 100%;
     width: 100%;
-    background: rgb(88,63,251);
-    background: linear-gradient(90deg, rgba(88,63,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: rgb(231, 231, 231);
     background-position: center;
     background-size:cover;
     position:absolute;
@@ -27,6 +26,7 @@
     padding: 5px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 2px 2px 2px 2px #888888;
 }
 
 .button-box
@@ -75,12 +75,12 @@
     width: 100%;
     padding: 10px 0;
     margin: 10px 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 1px solid #999;
+    padding-left: 10px;
+    border: 1px solid #4CAF50;
     outline: none;
     background: transparent;
+    border-radius: 10px;
+
 }
 
 .submit-btn
