@@ -1,0 +1,35 @@
+
+.topnav
+{
+    margin-left: 250px;
+}
+
+.topnav ul li
+{
+  list-style-type: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(107, 107, 107);
+}
+
+.topnav ul li i
+{
+    margin-right: 7px;
+    color: #4CAF50;
+}
+
+#email
+{
+    margin-left:30px;
+}
+
+#user
+{
+    margin-left:600px;
+}
+
+#contact
+{
+    margin-left: 30px;
+}

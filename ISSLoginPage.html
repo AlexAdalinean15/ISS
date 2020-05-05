@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title> Transparent Login Form Design </title>
+    <link rel="stylesheet" type="text/css" href="ISSLoginPage.css">   
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" id="inputText" class="input-field" placeholder="Username" required>
+                <input type="password" id="password-fieldLogin" class="input-field" placeholder=" Password" required>
+                <p class="InvalidMessage"></p>
+                <button type="button" class="submit-btn" onclick="loginJson()">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="text" class="input-field" placeholder="Email" required>
+                <input type="password" id="password-field" class="input-field" placeholder=" Password" required>
+                <input type="password" id="password-field" class="input-field" placeholder=" Confirm password" required>
+                <button type="button" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="ISSLoginPage.js">
+    </script>
+</body>
+</html>
