@@ -2,18 +2,30 @@
 <html>
     <header>
         <title> City Go </title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
         <link rel="stylesheet" href="ISSMainPage.css">
     </header>
     <body>
         <div class="topnav">
             <ul>
-                <a href="file:///C:/Projects/ISS/ISSMainPage.html"><li><i id="home" class="fa fa-home"></i>Home</li></a>
+                <a href="ISSMainPage.html"><li><i id="home" class="fa fa-home"></i>Home</li></a>
                 <li><i id="phone"  class="fa fa-phone"></i> Phone: (004) 0724 399 299</li>
                 <li><i id="email" class="fa fa-paper-plane"></i> rentacar@gmail.com</li>
-                <a href="file:///C:/Projects/ISS/ISSUserPage.html"><li><i id="user" class="fa fa-user"></i> User</li></a>
-                <a href="file:///C:/Projects/ISS/ISSContactPage.html"><li><i id="contact" class="fa fa-id-card"></i> Contact</li></a>
+                <a href="ISSUserPage.html"><li><i id="user" class="fa fa-user"></i> User</li></a>
+                <a href="ISSContactPage.html"><li><i id="contact" class="fa fa-id-card"></i> Contact</li></a>
             </ul>
+        </div>
+        <div id="mapContainer">
+            <div id="mapid"></div>
+            <script src="ISSMainPage.js"></script>
         </div>
     </body>
 </html>

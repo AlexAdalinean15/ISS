@@ -1,51 +1,24 @@
-body
-{
-    background: rgb(231, 231, 231);
-}
-
-.topnav
-{
-    margin-left: 350px;
-}
-
-.topnav ul li
-{
-  list-style-type: none;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: rgb(107, 107, 107);
-}
-
-.topnav ul li i
-{
-    margin-right: 7px;
-    color: #4CAF50;
-}
-
-#phone
-{
-    margin-left:30px;
-}
-
-#email
-{
-    margin-left:30px;
-}
-
-#user
-{
-    margin-left:350px;
-}
-
-#contact
-{
-    margin-left: 30px;
+body{
+    text-align: center;
 }
 
 .body-user
 {
     margin-bottom: -20px;
+}
+
+.MainContent{
+    width: 75%;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+.MainContent li{
+    width: 30%;
+    padding: 100px;
+    text-align: left;
+    float: left;
 }
 
 .user-history
@@ -55,8 +28,6 @@ body
 
 .user-information
 {
-    margin-left:390px;
-    margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     width: 250px;
@@ -76,8 +47,6 @@ body
 
 .user-name
 {
-    margin-left:390px;
-    margin-top: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     width: 250px;
@@ -86,8 +55,6 @@ body
 
 .user-n
 {
-    margin-left:410px;
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     width: 250px;
@@ -98,8 +65,6 @@ body
 
 .user-email
 {
-    margin-left:390px;
-    margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     width: 250px;
@@ -108,8 +73,6 @@ body
 
 .user-e
 {
-    margin-left:410px;
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     width: 250px;
@@ -124,8 +87,7 @@ body
 
 .user-history
 {
-    margin-left:730px;
-    margin-top:-183px;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     width: 190px;
@@ -150,8 +112,6 @@ body
 
 .user-rental1
 {
-    margin-left:730px;
-    margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     width: 250px;
@@ -160,8 +120,6 @@ body
 
 .user-R1
 {
-    margin-left:950px;
-    margin-top: -20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     width: 250px;

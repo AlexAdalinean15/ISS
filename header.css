@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    background: rgb(231, 231, 231);
+}
+
+.topnav
+{
+    padding: 5px;
+    text-align: center;
+}
+
+.topnav ul li
+{
+  list-style-type: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(107, 107, 107);
+}
+
+.topnav ul li i
+{
+    margin-right: 7px;
+    color: #4CAF50;
+}
+
+#phone
+{
+    margin-left:30px;
+}
+
+#email
+{
+    margin-left:30px;
+}
+
+#user
+{
+    margin-left:250px;
+}
+
+#contact
+{
+    margin-left: 30px;
+}

@@ -1,40 +1,11 @@
 
-.topnav
-{
-    margin-left: 350px;
+#mapContainer{
+    text-align: center;
+    height: 90%;
 }
 
-.topnav ul li
-{
-  list-style-type: none;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: rgb(107, 107, 107);
-}
-
-.topnav ul li i
-{
-    margin-right: 7px;
-    color: #4CAF50;
-}
-
-#phone
-{
-    margin-left:30px;
-}
-
-#email
-{
-    margin-left:30px;
-}
-
-#user
-{
-    margin-left:350px;
-}
-
-#contact
-{
-    margin-left: 30px;
+#mapid{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
 }
