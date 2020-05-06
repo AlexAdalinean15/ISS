@@ -1,18 +1,36 @@
-
-.body-user
-{
-    margin-bottom: -20px;
+body{
+    text-align: center;
 }
 
-.user-history
-{
-    margin-bottom: -20px;
+.MainContent {
+    margin-top: 100px;
+    display: inline-block;
+    list-style-type: none;
+    width: 80%;
 }
+
+.MainContent li ul{
+    list-style-type: none;
+    text-align: left;
+    /* background-color: firebrick; */
+    float: left;
+}
+
+.MainContent li ul li ul{
+    padding: 10px;
+}
+
+
+
+.MainContent li ul li ul li{
+    list-style-type: none;
+    padding: 10px;
+
+}
+
 
 .company-details
 {
-    margin-left:390px;
-    margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     width: 250px;
@@ -38,21 +56,16 @@
 
 .title
 {
-    margin-left:390px;
-    margin-top: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    width: 250px;
     color:  rgb(82, 80, 80);
 }
 
 .body
 {
-    margin-left:435px;
-    margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    width: 350px;
+    margin-left: 60px;
     color:  rgb(82, 80, 80);
 }
 
@@ -61,15 +74,8 @@
     color:#4CAF50;
 }
 
-#lastIcon
-{
-    margin-top:25px;
-}
-
 .write-comment
 {
-    margin-left:1000px;
-    margin-top:-380px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     width: 250px;
@@ -89,7 +95,6 @@
 
 #comment
 {
-    margin-left:1000px;
     margin-top:25px;
 }
 
