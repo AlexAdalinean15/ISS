@@ -1,29 +1,52 @@
-body{
+body
+{
     text-align: center;
 }
 
-.body-user
+.MainContent
 {
-    margin-bottom: -20px;
-}
-
-.MainContent{
     width: 75%;
     display: inline-block;
     list-style-type: none;
     text-align: center;
 }
 
-.MainContent li{
+.MainContent li
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(82, 80, 80);
+    width: 250px;
+}
+
+.Content
+{
     width: 30%;
     padding: 100px;
     text-align: left;
     float: left;
 }
 
-.user-history
+.Content ul
 {
-    margin-bottom: -20px;
+    padding-bottom: 15%;
+}
+
+.Content-Header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 250px;
+    color: rgb(82, 80, 80);
+    margin-left: 37px;
+}
+
+.Content-Header::after
+{
+    content: ' ';
+    display: block;
+    margin-top: 10px;
+    width: 28%;
+    border-bottom:solid 2px #4CAF50;
 }
 
 .user-information
@@ -34,49 +57,31 @@ body{
     color: rgb(82, 80, 80);
 }
 
-
-.user-information::after
+.inner-header
 {
-    content: ' ';
-    display: block;
+    margin-top:25px;
+    font-size: 18px;
+    width: 250px;
+    color:  rgb(82, 80, 80);
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.user-body
+{
     margin-top: 10px;
-    height: 0px;
-    border-bottom:solid 2px #4CAF50;
-    width: 28%;
-}
-
-.user-name
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-
-.user-n
-{
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
     font-size: 15px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
 }
 
-
-
-.user-email
+.history-body
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-
-.user-e
-{
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+    margin-left:100%;
     font-size: 15px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
 }
 
 #icon
@@ -84,45 +89,3 @@ body{
     margin-right: 5px;
     color:#4CAF50;
 }
-
-.user-history
-{
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    width: 190px;
-    color: rgb(82, 80, 80);
-}
-
-
-.user-history::after
-{
-    content: ' ';
-    display: block;
-    margin-top: 10px;
-    height: 0px;
-    border-bottom:solid 2px #4CAF50;
-    width: 28%;
-}
-
-.rental
-{
-    margin-top:45px;
-}
-
-.user-rental1
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-
-.user-R1
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    width: 250px;
-    color:  rgb(82, 80, 80);
-}
-

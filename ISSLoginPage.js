@@ -28,7 +28,7 @@ function loginJson()
     {        
         if(request.response === "Login success!")
         {
-            window.open("file:///D:/Projects/ISS/ISSMainPage.html","_self")
+            window.open("ISSMainPage.html","_self")
         }
 
         else

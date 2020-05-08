@@ -17,26 +17,48 @@
         </ul>
     </div>
 
-    <div class="body-company-details">
-        <div class="company-details"><b>Company details</b></div>
-        <div class="title"><i id="icon" class="fa fa-map-marker fa-lg"></i><b>Address</b></div>
-        <div class="body">400491 Cluj-Napoca, Calea Turzii 223</div>
-        <div class="title"><i id="icon" class="fa fa-info fa-lg"></i><b>Contact</b></div>
-        <div class="body">Phone: (004) 0724 399 299</div>
-        <div class="body" id="lastIcon">Email: rentacar@gmail.com</div>
-        <div class="title"><i id="icon" class="fa fa-address-book fa-lg"></i><b>Company details</b></div>
-        <div class="body"><b>CUI:</b> 10970757, J12/1418/1998</div>
-        <div class="body" id="lastIcon"><b>Bank account: </b> RO28BTRL01301202902837XX</div>
-    </div>
+    <ul class="MainContent">
+        <li>
+            <ul>
+                <li class="company-details"><b>Company details</b></li>
+                <li>
+                    <ul>
+                        <li id="element" class="title"><i id="icon" class="fa fa-map-marker fa-lg"></i><b>Address</b></li>
+                        <li>
+                            <ul>
+                                <li id="element" class="body">400491 Cluj-Napoca, Calea Turzii 223</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
-    <div class="body-write-comment">
-        <div class="write-comment"><b>Write a comment</b></div>
-        <form id="comment" class="input-group">
-            <input type="text" class="input-field" placeholder="Name" required>
-            <input type="text" class="input-field" placeholder=" Email" required>
-            <textarea type="text" id="inputComment" class="input-field" placeholder=" Message"></textarea>
-            <button type="button" class="submit-btn">Send</button>
-        </form>
-    </div>
+                <li>
+                    <ul>
+                        <li id="element" class="title"><i id="icon" class="fa fa-address-book fa-lg"></i><b>Company details</b></li>
+                        <li id="element">
+                            <ul>
+                                <li class="body"><b>CUI:</b> 10970757, J12/1418/1998</li>
+                                <li class="body" id="lastIcon"><b>Bank account: </b> RO28BTRL01301202902837XX</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="body-write-comment">
+                <li>
+                    <div class="write-comment"><b>Write a comment</b></div>
+                </li>
+                <li>
+                    <form id="comment" class="input-group">
+                        <textarea type="text" id="inputComment" class="input-field" placeholder=" Message"></textarea>
+                        <button type="button" class="submit-btn">Send</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
