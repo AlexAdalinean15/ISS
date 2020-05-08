@@ -1,36 +1,33 @@
-
-body
-{
+body{
     text-align: center;
 }
 
-.MainContent 
-{
+.MainContent {
     margin-top: 100px;
     display: inline-block;
     list-style-type: none;
     width: 80%;
 }
 
-.MainContent li ul
-{
+.MainContent li ul{
     list-style-type: none;
     text-align: left;
     /* background-color: firebrick; */
     float: left;
 }
 
-.MainContent li ul li ul
-{
+.MainContent li ul li ul{
     padding: 10px;
 }
 
-.MainContent li ul li ul li
-{
+
+
+.MainContent li ul li ul li{
     list-style-type: none;
     padding: 10px;
 
 }
+
 
 .company-details
 {
@@ -68,7 +65,7 @@ body
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    margin-left:60px;
+    margin-left: 60px;
     color:  rgb(82, 80, 80);
 }
 
@@ -101,6 +98,20 @@ body
     margin-top:25px;
 }
 
+.input-field
+{
+    margin-inline-start: 10px;
+    width: 500px;
+    height: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid #4CAF50;
+    outline: none;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding-left: 10px;
+}
 
 #inputComment
 {
