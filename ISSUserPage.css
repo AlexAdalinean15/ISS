@@ -9,7 +9,7 @@ body
     display: inline-block;
     list-style-type: none;
     text-align: center;
-}  
+}
 
 .MainContent li
 {
@@ -33,7 +33,10 @@ body
 
 .Content-Header
 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+    width: 250px;
+    color: rgb(82, 80, 80);
     margin-left: 37px;
 }
 
@@ -42,15 +45,24 @@ body
     content: ' ';
     display: block;
     margin-top: 10px;
-    height: 0px;
-    border-bottom:solid 2px #4CAF50;
     width: 28%;
+    border-bottom:solid 2px #4CAF50;
+}
+
+.user-information
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 250px;
+    color: rgb(82, 80, 80);
 }
 
 .inner-header
 {
     margin-top:25px;
     font-size: 18px;
+    width: 250px;
+    color:  rgb(82, 80, 80);
 }
 
 ul
@@ -69,7 +81,7 @@ ul
 {
     margin-top: -20px;
     margin-left:100%;
-    font-size: 15px;   
+    font-size: 15px;
 }
 
 #icon
