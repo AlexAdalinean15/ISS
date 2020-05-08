@@ -25,9 +25,16 @@ function loginJson()
     request.open('GET', "http://5.13.107.110:3286/api/login?mail=" + username + "&password=" + document.getElementById("password-fieldLogin").value)
 
     request.onload = function() 
-    {
-        alert(request.response);
-        window.open("file:///D:/Projects/ISS/ISSMainPage.html","_self")
+    {        
+        if(request.response === "Login success!")
+        {
+            window.open("file:///D:/Projects/ISS/ISSMainPage.html","_self")
+        }
+
+        else
+        {
+            alert("Invalid username or password!");
+        }
     }
     
    request.send()
