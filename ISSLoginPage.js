@@ -42,3 +42,26 @@ function loginJson()
     
 //    request.send()
 }
+
+function registerJson()
+{
+    var request = new XMLHttpRequest()
+    request.open('POST', "http://188.24.33.93:3286/api/clients");
+    request.setRequestHeader('Access-Control-Allow-Origin', "application/json");
+
+    request.onload = function() 
+    {        
+        if(request.response === "Login success!")
+        {
+            window.open("ISSMainPage.html","_self")
+        }
+
+        else
+        {
+            alert("Something went wrong!");
+        }
+    }
+
+    var data = JSON.stringify({"name": document.getElementById("nameRegister"), "email": document.getElementById("emailRegister"), "password":document.getElementById("password-field")});
+    request.send(data);
+}
