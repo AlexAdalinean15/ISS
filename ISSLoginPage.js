@@ -21,21 +21,24 @@ function login()
 function loginJson()
 {
     var request = new XMLHttpRequest()
-    var username = document.getElementById("inputText").value;
-    request.open('GET', "http://5.13.107.110:3286/api/login?mail=" + username + "&password=" + document.getElementById("password-fieldLogin").value)
+    var emailAdress = document.getElementById("inputText").value;
+    localStorage.setItem("email", emailAdress);
+    window.open("ISSMainPage.html","_self")
 
-    request.onload = function() 
-    {        
-        if(request.response === "Login success!")
-        {
-            window.open("ISSMainPage.html","_self")
-        }
+//     request.open('GET', "http://188.24.33.93:3286/api/login?mail=" + emailAdress + "&password=" + document.getElementById("password-fieldLogin").value)
 
-        else
-        {
-            alert("Invalid username or password!");
-        }
-    }
+//     request.onload = function() 
+//     {        
+//         if(request.response === "Login success!")
+//         {
+//             window.open("ISSMainPage.html","_self")
+//         }
+
+//         else
+//         {
+//             alert("Invalid username or password!");
+//         }
+//     }
     
-   request.send()
+//    request.send()
 }

@@ -3,15 +3,16 @@ body
     text-align: center;
 }
 
-.MainContent
+#MainContent
 {
     width: 75%;
+    margin-left: 13%;
     display: inline-block;
     list-style-type: none;
     text-align: center;
 }
 
-.MainContent li
+#MainContent li
 {
     font-family: Arial, Helvetica, sans-serif;
     color:  rgb(82, 80, 80);

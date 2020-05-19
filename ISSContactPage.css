@@ -4,6 +4,7 @@ body{
 
 .MainContent {
     margin-top: 100px;
+    margin-left: 23%;
     display: inline-block;
     list-style-type: none;
     width: 80%;
