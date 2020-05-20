@@ -22,14 +22,21 @@ function loginJson()
 {
     var request = new XMLHttpRequest()
     var emailAdress = document.getElementById("inputText").value;
-    localStorage.setItem("email", emailAdress);
+    
 
-    request.open('GET', "http://188.24.33.93:3286/api/login?mail=" + emailAdress + "&password=" + document.getElementById("password-fieldLogin").value)
+    request.open('GET', "http://188.24.33.93:3286/api/login?Mail=" + emailAdress + "&Password=" + document.getElementById("password-fieldLogin").value)
 
     request.onload = function() 
     {        
-        if(request.response == "Login success!")
+        if(request.response != "FAIL")
         {
+            var client = JSON.parse(request.responseText);
+
+            localStorage.setItem("id", client.Id);
+            localStorage.setItem("username", client.Name);
+            localStorage.setItem("email", client.Mail);
+
+            alert(client.Id);
             window.open("ISSMainPage.html","_self")
         }
 
