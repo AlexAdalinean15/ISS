@@ -1,12 +1,9 @@
-var email = "";
 
 document.addEventListener('DOMContentLoaded', function() 
 {
-    email = localStorage.getItem("email");
-    GetUserInformationFromServer();
+    CreateUserListItem(localStorage.getItem("username"), localStorage.getItem("email"));
     GetHistoryInformationFromServer();
-    CreateUserListItem("Alex Adalinean", "alexadalinean42@gmail.com")
-    CreateUserListItem("Lobont Terec Andrei Lucian", "lobont@gmail.com")
+
 }, false);
 
 function CreateUserListItem(name, emailAdress)
@@ -95,41 +92,58 @@ function CreateHistoryListItem(date, carModel, numberOfSeats, price)
     li.appendChild(ul1);
 }
 
-function GetUserInformationFromServer()
+function GetHistoryInformationFromServer()
 {
     var request = new XMLHttpRequest();
-    request.open('GET', "");
-    request.send();
+    request.open('GET', "http://188.24.33.93:3286/api/rentals");
 
     request.onload = function()
     {
         if (request.readyState == 4 && request.status == 200) 
         {
-            var userInformation = JSON.parse(request.responseText);
-            CreateUserListItem(userInformation.name, email);
+            var rentals = JSON.parse(request.responseText);
+            var id = localStorage.getItem("id");
+            var rentalArrays = [];
+
+            for(var i = 0; i < rentals.length; i++)
+            {
+                if(rentals[i].clientId == id)
+                {
+                    rentalArrays.push(rentals[i].carId);
+                }
+            }
+
+            GetCarsFromServer(rentalArrays);
         }
         else
         {
             alert("Request failed");
         }
     }
+    request.send();
 }
 
-function GetHistoryInformationFromServer()
+function GetCarsFromServer(rentalArrays)
 {
     var request = new XMLHttpRequest();
-    request.open('GET', "http://localhost/Laboratory7/GetCategories.php");
-    request.send();
+    request.open('GET', "http://188.24.33.93:3286/api/cars");
 
     request.onload = function()
     {
         if (request.readyState == 4 && request.status == 200) 
         {
-            var historyList = JSON.parse(request.responseText);
+            var cars = JSON.parse(request.responseText);
+            var id = localStorage.getItem("id");
 
-            for(var i = 0; i < historyList.length; i++)
+            for(var i = 0; i < rentalArrays.length; i++)
             {
-                CreateHistoryListItem(historyList[i].date, historyList[i].carModel, historyList[i].numberOfSeats, historyList[i].price);
+               for(var j = 0; j < cars.length; j++)
+               {
+                    if(cars[j].id == rentalArrays[i])
+                    {
+                        CreateHistoryListItem("adasda", cars[j].manufacturer + ' ' + cars[j].model, cars[j].numberOfSeats, cars[j].price)
+                    }
+               }
             }
         }
         else
@@ -137,4 +151,5 @@ function GetHistoryInformationFromServer()
             alert("Request failed");
         }
     }
+    request.send();
 }
