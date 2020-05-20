@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function()
     email = localStorage.getItem("email");
     GetUserInformationFromServer();
     GetHistoryInformationFromServer();
+    CreateUserListItem("Alex Adalinean", "alexadalinean42@gmail.com")
+    CreateUserListItem("Lobont Terec Andrei Lucian", "lobont@gmail.com")
 }, false);
 
 function CreateUserListItem(name, emailAdress)

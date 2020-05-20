@@ -23,24 +23,23 @@ function loginJson()
     var request = new XMLHttpRequest()
     var emailAdress = document.getElementById("inputText").value;
     localStorage.setItem("email", emailAdress);
-    window.open("ISSMainPage.html","_self")
 
-//     request.open('GET', "http://188.24.33.93:3286/api/login?mail=" + emailAdress + "&password=" + document.getElementById("password-fieldLogin").value)
+    request.open('GET', "http://188.24.33.93:3286/api/login?mail=" + emailAdress + "&password=" + document.getElementById("password-fieldLogin").value)
 
-//     request.onload = function() 
-//     {        
-//         if(request.response === "Login success!")
-//         {
-//             window.open("ISSMainPage.html","_self")
-//         }
+    request.onload = function() 
+    {        
+        if(request.response == "Login success!")
+        {
+            window.open("ISSMainPage.html","_self")
+        }
 
-//         else
-//         {
-//             alert("Invalid username or password!");
-//         }
-//     }
+        else
+        {
+            alert("Invalid username or password!");
+        }
+    }
     
-//    request.send()
+   request.send()
 }
 
 function registerJson()
@@ -51,7 +50,7 @@ function registerJson()
 
     request.onload = function() 
     {        
-        if(request.response === "Login success!")
+        if(request.response != null)
         {
             window.open("ISSMainPage.html","_self")
         }
@@ -62,6 +61,6 @@ function registerJson()
         }
     }
 
-    var data = JSON.stringify({"name": document.getElementById("nameRegister"), "email": document.getElementById("emailRegister"), "password":document.getElementById("password-field")});
+    var data = JSON.stringify({"name": document.getElementById("nameRegister").value, "mail": document.getElementById("emailRegister").value, "password":document.getElementById("password-field").value});
     request.send(data);
 }
