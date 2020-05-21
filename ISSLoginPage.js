@@ -35,8 +35,7 @@ function loginJson()
             localStorage.setItem("id", client.Id);
             localStorage.setItem("username", client.Name);
             localStorage.setItem("email", client.Mail);
-
-            alert(client.Id);
+            localStorage.setItem("numberOfPastRentals", client.NumberOfPastRentals);
             window.open("ISSMainPage.html","_self")
         }
 
@@ -57,17 +56,28 @@ function registerJson()
 
     request.onload = function() 
     {        
-        if(request.response != null)
+        if(request.response != "Invalid client!")
         {
+            var client = request.responseText;
+
+            localStorage.setItem("id", client);
+            localStorage.setItem("username", document.getElementById("nameRegister").value);
+            localStorage.setItem("email", document.getElementById("emailRegister").value);
             window.open("ISSMainPage.html","_self")
         }
 
         else
         {
-            alert("Something went wrong!");
+            alert("Registration failed! Invalid data!");
         }
     }
 
+    if(document.getElementById("password-field").value != document.getElementById("password-fieldConfirm").value)
+    {
+        alert("Please confirm password!");
+        return;
+    }
+    
     var data = JSON.stringify({"name": document.getElementById("nameRegister").value, "mail": document.getElementById("emailRegister").value, "password":document.getElementById("password-field").value});
     request.send(data);
 }
