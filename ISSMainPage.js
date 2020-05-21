@@ -44,7 +44,7 @@ function popup(carId, man, model, nrSeats, price)
 {
     var str = "<div class='Popup'>";
     str += getCarPhoto(carId);
-    str += " <p>" + man + " "+ model + "</p> <p><b>Seats:</b> " + nrSeats + "</p> <p><b>Price:</b> " + price + " $</p>";
+    str += " <p>" + man + " "+ model + "</p> <p><b>Seats:</b> " + nrSeats + "</p> <p><b>Price:</b> " + price + " $ / km</p>";
     str += "<button class='Rent' id='" + carId + "'onClick='rent(this.id)'>Rent</button></div>";
     return str;
 }
