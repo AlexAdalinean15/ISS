@@ -57,7 +57,7 @@ function CreateHistoryListItem(date, carModel, numberOfSeats, price)
     var li4 = document.createElement("li");
     var i2 = document.createElement("i");
     i2.setAttribute("id","icon");
-    i2.setAttribute("class", "fa fa-paper-car");
+    i2.setAttribute("class", "fas fa-car-side");
     li4.appendChild(i2);
     li4.appendChild(document.createTextNode(carModel));
     li4.setAttribute("class","history-body");
@@ -104,16 +104,18 @@ function GetHistoryInformationFromServer()
             var rentals = JSON.parse(request.responseText);
             var id = localStorage.getItem("id");
             var rentalArrays = [];
+            var dates = [];
 
             for(var i = 0; i < rentals.length; i++)
             {
                 if(rentals[i].clientId == id)
                 {
                     rentalArrays.push(rentals[i].carId);
+                    dates.push(rentals[i].dateTime);
                 }
             }
 
-            GetCarsFromServer(rentalArrays);
+            GetCarsFromServer(rentalArrays, dates);
         }
         else
         {
@@ -123,7 +125,7 @@ function GetHistoryInformationFromServer()
     request.send();
 }
 
-function GetCarsFromServer(rentalArrays)
+function GetCarsFromServer(rentalArrays, dates)
 {
     var request = new XMLHttpRequest();
     request.open('GET', "http://188.24.33.93:3286/api/cars");
@@ -133,7 +135,6 @@ function GetCarsFromServer(rentalArrays)
         if (request.readyState == 4 && request.status == 200) 
         {
             var cars = JSON.parse(request.responseText);
-            var id = localStorage.getItem("id");
 
             for(var i = 0; i < rentalArrays.length; i++)
             {
@@ -141,7 +142,7 @@ function GetCarsFromServer(rentalArrays)
                {
                     if(cars[j].id == rentalArrays[i])
                     {
-                        CreateHistoryListItem("adasda", cars[j].manufacturer + ' ' + cars[j].model, cars[j].numberOfSeats, cars[j].price)
+                        CreateHistoryListItem(dates[i].substring(0, 10), cars[j].manufacturer + ' ' + cars[j].model, cars[j].numberOfSeats, cars[j].price)
                     }
                }
             }
